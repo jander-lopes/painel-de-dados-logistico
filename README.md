@@ -22,3 +22,7 @@ Dashboard para análise de dados de receitas, custos, resultado e margem de uma 
 ### Controle de versões:
 
 - git
+
+### Visualize o projeto em:
+
+- https://painel-de-dados-logistico.streamlit.app/
