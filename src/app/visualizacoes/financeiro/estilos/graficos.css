@@ -1,0 +1,123 @@
+.block-container {
+  max-width: 1920px;
+}
+.block-container > div > div > [data-testid="stVerticalBlock"] > div.e1f1d6gn5 {
+  gap: 2rem;
+}
+/* Metricas e Gráficos ======================================================================== */
+/* Modifica posicionamento das metricas */
+[data-testid="stMetric"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modifica posicionamento das metricas */
+@media (max-width: 1060px) {
+  .block-container
+    > div
+    > div
+    > [data-testid="stVerticalBlock"]
+    > div.e1f1d6gn5:not(.e1f1d6gn5 ~ .e1f1d6gn5) {
+    flex-direction: column;
+  }
+
+  .block-container
+    > div
+    > div
+    > [data-testid="stVerticalBlock"]
+    > div.e1f1d6gn5:not(.e1f1d6gn5 ~ .e1f1d6gn5)
+    > [data-testid="column"] {
+    width: 100%;
+  }
+}
+
+/* Modigica posicionamento dos gráficos */
+@media (max-width: 1020px) {
+  .block-container
+    > div
+    > div
+    > [data-testid="stVerticalBlock"]
+    > div.e1f1d6gn5
+    ~ div.e1f1d6gn5 {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .block-container
+    > div
+    > div
+    > [data-testid="stVerticalBlock"]
+    > div.e1f1d6gn5
+    ~ div.e1f1d6gn5
+    [data-testid="column"] {
+    width: 100%;
+  }
+}
+/* Fim Metricas e Gráficos ======================================================================== */
+
+/* Gráficos  ====================================================================================== */
+/* Modifica posicionamento do botão tela cheia dos gráficos */
+[data-testid="StyledFullScreenButton"] {
+  right: 0.5rem;
+}
+/* Modifica posicionamento da caixa de ferramenta dos gráficos */
+.js-plotly-plot .plotly .modebar {
+  right: 4rem;
+}
+/* Fim Gráficos  ================================================================================== */
+
+/* Barra Lateral  ================================================================================== */
+/* Modifica o posicionamento da barra lateral */
+[data-testid="stSidebar"] {
+  position: absolute !important;
+}
+/* Modifica o container caixa de seleção mais botão */
+/* do filtro mês */
+/* section.st-emotion-cache-vk3wp9.eczjsme11 */
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:nth-child(3) {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+/* Modifica o container caixa de seleção mais botão */
+/* do filtro filial */
+/* section.st-emotion-cache-vk3wp9.eczjsme11 */
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:nth-child(4) {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+/* Modifica os botões dos filtros mês e filial */
+/* section.st-emotion-cache-vk3wp9.eczjsme11 */
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] button {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 640px) {
+  /* Modifica o container caixa de seleção mais botão */
+  /* do filtro mês */
+  [data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:nth-child(3) {
+    flex-wrap: nowrap;
+    align-items: end;
+    gap: 0.5rem;
+  }
+  /* Modifica o container caixa de seleção mais botão */
+  /* do filtro filial */
+  [data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:nth-child(4) {
+    flex-wrap: nowrap;
+    align-items: end;
+    gap: 0.5rem;
+  }
+  /* Modifica os botões dos filtros mês e filial */
+  [data-testid="stSidebar"] [data-testid="stVerticalBlock"] button {
+    background-color: transparent;
+    border: none;
+  }
+}
+/* Fim Barra Lateral  ============================================================================== */
